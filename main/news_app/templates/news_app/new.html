@@ -1,0 +1,9 @@
+{% extends 'default.html' %}
+
+{% load custom_filters %}
+{% load custom_tags %}
+
+{% block content %}
+<p>{{ New.title|currency }} : {{ New.date_creation|date:'d M Y' }}</p>
+<p>{{ New.text|currency }} </p>
+{% endblock content%}
